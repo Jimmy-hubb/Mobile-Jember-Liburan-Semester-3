@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="153dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_jeli"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/img_jl1"
+        />
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/img_jl1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="56dp"
+        android:text="Sign In"
+        android:textSize="32dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/primary_colour"
+        android:id="@+id/tx_lgn1"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tx_lgn1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/primary_colour"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp"
+        android:textColorHint="@color/primary_colour"
+        android:textColor="@color/primary_colour"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/etx_username"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etx_username"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/primary_colour"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="16dp"
+        android:textColorHint="@color/primary_colour"
+        android:textColor="@color/primary_colour"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/etx_password"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etx_password"
+        android:background="@drawable/button_shape_sc"
+        android:text="Login"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/btn_lgn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_lgn"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="102dp"
+        android:text="Lupa kata sandi?"
+        android:textColor="@color/primary_colour"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/tx_lgn2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_lgn"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="209dp"
+        android:text="Forgot Password"
+        android:textColor="@color/secondary_colour"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/tx_lupapassword"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_lgn"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="117dp"
+        android:text="Belum punya akun?"
+        android:textColor="@color/primary_colour"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/tx_lgn4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_lgn"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="240dp"
+        android:text="Register"
+        android:textColor="@color/secondary_colour"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/tx_register"
+        />
+
+</RelativeLayout>

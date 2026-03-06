@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cek_tiket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CekTiketActivity"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <View
+        android:id="@+id/view_tiket1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/primary_colour" />
+
+    <!-- Judul -->
+
+    <!-- Logo Tiket (Dipusatkan) -->
+
+    <!-- EditText untuk Cari Tiket (Order ID atau Destinasi) -->
+
+    <TextView
+        android:id="@+id/textViewJudulCekTiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/view_tiket1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Cek Tiket"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/img_tiket"
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:layout_alignBottom="@+id/view_tiket1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="-33dp"
+        android:contentDescription="Logo Tiket"
+        android:src="@drawable/logo_tiket" />
+
+    <EditText
+        android:id="@+id/editTextCari"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Order ID atau Destinasi"
+        android:inputType="text"
+        android:textColor="@color/primary_colour"
+        android:layout_below="@id/img_tiket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Tombol Cek Tiket -->
+    <Button
+        android:id="@+id/buttonCekTiket"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Cek Tiket"
+        android:layout_below="@id/editTextCari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary_colour"
+        android:textColor="@color/white" />
+
+    <!-- Kontainer untuk RecyclerView dan TextView -->
+    <LinearLayout
+        android:id="@+id/linearLayoutTiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/buttonCekTiket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center">
+
+        <!-- RecyclerView untuk Menampilkan Riwayat Tiket -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTiket"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <!-- TextView untuk Menampilkan Pesan (Jika Tidak Ada Data) -->
+        <TextView
+            android:id="@+id/textViewPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak ada data ditemukan."
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <!-- ProgressBar untuk Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

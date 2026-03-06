@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewRiwayatTiket"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:background="@color/primary_colour">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/textViewJudul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="Riwayat Tiket"
+            android:textColor="@color/primary_colour"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Order ID Label -->
+        <TextView
+            android:id="@+id/textViewOrderIdLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Order ID:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewJudul" />
+
+        <!-- Order ID Data -->
+        <TextView
+            android:id="@+id/textViewOrderId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="order-1731977722-8644"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toTopOf="@id/textViewOrderIdLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewOrderIdLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <!-- Destinasi Label -->
+        <TextView
+            android:id="@+id/textViewDestinasiLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Destinasi:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewOrderIdLabel" />
+
+        <!-- Destinasi Data -->
+        <TextView
+            android:id="@+id/textViewDestinasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bali"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toTopOf="@id/textViewDestinasiLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewDestinasiLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <!-- Email Label -->
+        <TextView
+            android:id="@+id/textViewEmailLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Email:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDestinasiLabel" />
+
+        <!-- Email Data -->
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="user@example.com"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toTopOf="@id/textViewEmailLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewEmailLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <!-- Tanggal Kunjungan Label -->
+        <TextView
+            android:id="@+id/textViewTanggalLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Tanggal Kunjungan:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewEmailLabel" />
+
+        <!-- Tanggal Kunjungan Data -->
+        <TextView
+            android:id="@+id/textViewTanggal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2024-12-31"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toTopOf="@id/textViewTanggalLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewTanggalLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <!-- Jumlah Tiket Label -->
+        <TextView
+            android:id="@+id/textViewJumlahTiketLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Jumlah Tiket:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTanggalLabel" />
+
+        <!-- Jumlah Tiket Data -->
+        <TextView
+            android:id="@+id/textViewJumlahTiket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toTopOf="@id/textViewJumlahTiketLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewJumlahTiketLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <!-- Total Bayar Label -->
+        <TextView
+            android:id="@+id/textViewTotalBayarLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Total Bayar:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewJumlahTiketLabel" />
+
+        <!-- Total Bayar Data -->
+        <TextView
+            android:id="@+id/textViewTotalBayar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rp. 500.000"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toTopOf="@id/textViewTotalBayarLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewTotalBayarLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <!-- Status Tiket Label -->
+        <TextView
+            android:id="@+id/textViewStatusTiketLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Status Tiket:"
+            android:textColor="@color/primary_colour"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTotalBayarLabel" />
+
+        <!-- Status Tiket Data dengan Indikator Warna -->
+        <LinearLayout
+            android:id="@+id/layoutStatusTiket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="@id/textViewStatusTiketLabel"
+            app:layout_constraintStart_toEndOf="@id/textViewStatusTiketLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp">
+
+            <!-- Indikator Warna -->
+            <View
+                android:id="@+id/viewStatusIndicator"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/status_indicator_background" />
+
+            <!-- Teks Status Tiket -->
+            <TextView
+                android:id="@+id/textViewStatusTiket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Dibayar"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular" />
+        </LinearLayout>
+
+        <!-- Tombol Bayar -->
+        <Button
+            android:id="@+id/buttonBayar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bayar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_colour"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:fontFamily="@font/poppinsmedium"
+            app:layout_constraintTop_toBottomOf="@id/textViewStatusTiketLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

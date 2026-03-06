@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "576532996444",
+    "project_id": "jeli-e8da2",
+    "storage_bucket": "jeli-e8da2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576532996444:android:170053cd36bbcb9f69a199",
+        "android_client_info": {
+          "package_name": "com.project.jemberliburan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQQPhyQmjxZP6QYqgN10i_0sKe0WfDcKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

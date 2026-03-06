@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TiketFragment"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:background="@color/primary_colour"
+        android:id="@+id/view_tiket1"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/icon_back2"
+        android:id="@+id/icon_back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Bantuan"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:id="@+id/tx_bantuan1"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/view_home"
+        />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/logo_bantuan"
+        android:id="@+id/img_bantuan"
+        />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_bantuan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Apakah Anda menghadapi kendala saat menggunakan aplikasi JELI?"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/tx_bantuan2"
+        />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_bantuan2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Jika Anda menemukan masalah atau membutuhkan bantuan saat menggunakan aplikasi JELI, silakan hubungi kami. Tim kami siap memberikan solusi terbaik untuk memastikan pengalaman Anda tetap lancar dan menyenangkan. Jangan ragu untuk menghubungi admin melalui kontak di bawah ini kapan saja!"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="16dp"
+        android:textColor="@color/font_colour"
+        android:id="@+id/tx_bantuan3"
+        />
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_bantuan3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="Hubungi Kami"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="16dp"
+        android:textColor="@color/font_colour"
+        android:id="@+id/tx_bantuan4"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_bantuan4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/icon_hubungikami"
+        />
+
+</RelativeLayout>

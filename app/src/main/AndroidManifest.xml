@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_jeli"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/icon_jeli"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.RiwayatUlasanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PostUlasanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.RiwayatTiketAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.WellcomeSliderAdapter"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.FavoritSayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchDestinasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TentangSayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BantuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchFiturActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.SearchFiturAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailTipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailDestinasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UlasanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".model.Fitur"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.FiturAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.DestinasiAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.ImageSliderAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RiwayatTiketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CekTiketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NavigasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.ProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.TiketFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.DestinasiFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WellcomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VerificationCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

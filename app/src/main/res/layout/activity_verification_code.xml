@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerificationCodeActivity"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="153dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_jeli"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/logo_description" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/verify_code_title"
+        android:textColor="@color/primary_colour"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <!-- Container untuk input angka -->
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!-- Input pertama -->
+        <EditText
+            android:id="@+id/inputField1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/input_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:textColor="@color/primary_colour"
+            android:fontFamily="@font/poppinsregular"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/enter_code_digit1" />
+
+        <!-- Input kedua -->
+        <EditText
+            android:id="@+id/inputField2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/input_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:textColor="@color/primary_colour"
+            android:fontFamily="@font/poppinsregular"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/enter_code_digit2" />
+
+        <!-- Input ketiga -->
+        <EditText
+            android:id="@+id/inputField3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/input_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:textColor="@color/primary_colour"
+            android:fontFamily="@font/poppinsregular"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/enter_code_digit3" />
+
+        <!-- Input keempat -->
+        <EditText
+            android:id="@+id/inputField4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/input_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:textColor="@color/primary_colour"
+            android:fontFamily="@font/poppinsregular"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/enter_code_digit4" />
+
+        <!-- Input kelima -->
+        <EditText
+            android:id="@+id/inputField5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/input_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:textColor="@color/primary_colour"
+            android:fontFamily="@font/poppinsregular"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/enter_code_digit5" />
+
+        <!-- Input keenam -->
+        <EditText
+            android:id="@+id/inputField6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/input_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:textColor="@color/primary_colour"
+            android:fontFamily="@font/poppinsregular"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/enter_code_digit6" />
+    </LinearLayout>
+
+    <!-- Tombol Verifikasi -->
+    <Button
+        android:id="@+id/verifyCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/inputContainer"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_sc"
+        android:text="@string/verify_button_text"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsregular" />
+
+
+</RelativeLayout>

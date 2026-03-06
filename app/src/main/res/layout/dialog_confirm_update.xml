@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center">
+
+
+    <!-- Judul Dialog -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textAlignment="center"
+        android:text="KONFIRMASI UPDATE PROFILE"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- Pesan Dialog -->
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="255dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Yakin ingin menyimpan perubahan?"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_colour"
+        android:textSize="12dp" />
+
+    <!-- Tombol Aksi -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Tidak"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Ya"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

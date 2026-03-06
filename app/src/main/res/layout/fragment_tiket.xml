@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TiketFragment"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@color/primary_colour"
+        android:id="@+id/view_tiket1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Tiket"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/view_home"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo_tiket"
+        android:id="@+id/img_tiket"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTiket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_tiket"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

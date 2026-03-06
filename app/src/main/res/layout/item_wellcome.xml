@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="27dp"
+        android:textSize="32dp"
+        android:fontFamily="@font/poppinsbold"
+        android:padding="5dp"
+        android:text="Judul"
+        android:textColor="@color/primary_colour" />
+
+    <!-- Gambar Utama -->
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/titleTextView"
+        android:src="@drawable/img_default" />
+
+    <!-- Deskripsi Singkat -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Deskripsi Singkat"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/font_colour" />
+
+    <!-- Tombol Swipe Up --> 
+    <ImageView
+        android:id="@+id/swipeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/icon_swipe1"
+        android:contentDescription="Swipe Up" />
+
+</RelativeLayout>

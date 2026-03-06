@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">jemberliburan</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_code_title">Verifikasi Kode</string>
+    <string name="verify_code_button">Verifikasi</string>
+    <string name="app_logo">Logo Aplikasi</string>
+    <string name="verify_button_text">Verify</string>
+    <string name="logo_description">Logo Aplikasi</string>
+    <string name="enter_code_digit1">Masukkan digit pertama kode verifikasi</string>
+    <string name="enter_code_digit2">Masukkan digit kedua kode verifikasi</string>
+    <string name="enter_code_digit3">Masukkan digit ketiga kode verifikasi</string>
+    <string name="enter_code_digit4">Masukkan digit keempat kode verifikasi</string>
+    <string name="enter_code_digit5">Masukkan digit kelima kode verifikasi</string>
+    <string name="enter_code_digit6">Masukkan digit keenam kode verifikasi</string>
+    <string name="back">kembali</string>
+
+
+    <string name="logo_profile">Logo Profile</string>
+    <string name="profile_image">Gambar Profil</string>
+    <string name="profile_icon">Icon Profil</string>
+    <string name="profile_action">Aksi Profil</string>
+    <!-- Tambahkan string lainnya sesuai kebutuhan -->
+
+
+    <string-array name="gender_options">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

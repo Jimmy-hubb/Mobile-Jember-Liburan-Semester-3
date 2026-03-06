@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
+    <color name="primary_colour">#08959A</color>
+    <color name="secondary_colour">#E58725</color>
+    <color name="default_colour">#F0F0F0</color>
+    <color name="font_colour">#9F9F9F</color>
+    <color name="radio_unchecked_color">#9E9E9E</color>
+
+    <color name="status_unpaid">#FF3B30</color> <!-- Merah untuk Belum Dibayar -->
+    <color name="status_paid">#4CD964</color>   <!-- Hijau untuk Sudah Dibayar -->
+    <color name="status_pending">#FFCC00</color>
+
+    <color name="gray">#B0B0B0</color> <!-- Warna abu-abu untuk bintang kosong -->
+    <color name="yellow">#FFD700</color> <!-- Warna kuning untuk bintang terisi -->
+
+</resources>

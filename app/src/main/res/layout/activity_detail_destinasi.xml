@@ -1,0 +1,151 @@
+<!-- res/layout/activity_detail_destinasi.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Gambar Detail Destinasi -->
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+           />
+
+        <!-- Icon Back -->
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/icon_back2"
+            />
+
+        <!-- Background View -->
+        <View
+            android:id="@+id/view_detailtip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewDetail"
+            android:background="@drawable/view_home" />
+
+        <!-- Nama Destinasi -->
+        <TextView
+            android:id="@+id/textViewNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewDetail"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Nama Destinasi" />
+
+        <!-- Icon Lokasi -->
+        <ImageView
+            android:id="@+id/icon_lokasi"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_below="@id/textViewNameDetail"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_lokasi"/>
+
+        <!-- Lokasi Destinasi -->
+
+        <!-- Rating Destinasi -->
+
+        <!-- Icon Favorit Saya -->
+
+        <TextView
+            android:id="@+id/textViewLocationDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewNameDetail"
+            android:layout_alignBaseline="@id/icon_lokasi"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/icon_lokasi"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Lokasi Destinasi"
+            android:textColor="@color/font_colour"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewRatingDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_lokasi"
+            android:layout_alignStart="@id/textViewLocationDetail"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Rating: 4.5"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_favoritsaya"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/imageViewDetail"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/icon_favoritsaya"
+            />
+
+        <!-- Deskripsi Destinasi -->
+        <TextView
+            android:id="@+id/textViewDeskripsiDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="229dp"
+            android:layout_below="@id/textViewRatingDetail"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Deskripsi detail destinasi akan ditampilkan di sini. Informasi lengkap tentang destinasi, fasilitas, dan lainnya."
+            android:textColor="@color/font_colour"
+            android:textSize="12sp" />
+
+        <!-- RecyclerView untuk Menampilkan 2 Ulasan Acak -->
+
+        <!-- TextView "Lihat Selengkapnya" -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReviews"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_below="@id/textViewDeskripsiDetail"
+            android:layout_marginTop="44dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textViewLihatSelengkapnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerViewReviews"
+            android:layout_alignEnd="@+id/recyclerViewReviews"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="85dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppinsbold"
+            android:padding="8dp"
+            android:text="Lihat Ulasan Selengkapnya"
+            android:textColor="@color/primary_colour"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

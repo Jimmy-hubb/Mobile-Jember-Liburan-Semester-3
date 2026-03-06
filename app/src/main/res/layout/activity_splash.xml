@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity"
+    android:background="@color/white"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_jeli"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_sp1"
+        />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_sp1"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="Jember Liburan by Urgent Team Aplikasi Berbasis Mobile Yang Mempermudah Waktu Berwisata Anda"
+        android:textColor="@color/font_colour"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        />
+
+</RelativeLayout>
