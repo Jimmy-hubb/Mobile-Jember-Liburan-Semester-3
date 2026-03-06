@@ -122,6 +122,8 @@ Android Studio akan menginstall semua dependency yang dibutuhkan.
 
 ![alt text](https://github.com/Jimmy-hubb/Mobile-Jember-Liburan-Semester-3/blob/main/app/WhatsApp%20Image%202026-03-02%20at%2020.05.45.jpeg?raw=true)
 
+![alt text](https://github.com/Jimmy-hubb/Mobile-Jember-Liburan-Semester-3/blob/main/app/Screenshot%202026-03-06%20183834.png?raw=true)
+
 ---
 
 # 🎯 Project Goals
