@@ -1,4 +1,4 @@
-# 📱 Si Jeli – Jember Liburan
+ # 📱 Si Jeli – Jember Liburan
 
 Aplikasi **Si Jeli (Sistem Informasi Jelajah Liburan Jember)** merupakan aplikasi **mobile berbasis Android** yang dikembangkan menggunakan **Java** dan **Android Studio**.
 
@@ -120,13 +120,7 @@ Android Studio akan menginstall semua dependency yang dibutuhkan.
 
 # 📸 Application Preview
 
-Tambahkan screenshot aplikasi pada folder `images`.
-
-```
-![Home Page](images/home.png)
-![List Wisata](images/list_wisata.png)
-![Detail Wisata](images/detail_wisata.png)
-```
+![alt text](https://github.com/Jimmy-hubb/Mobile-Jember-Liburan-Semester-3/blob/main/app/WhatsApp%20Image%202026-03-02%20at%2020.05.45.jpeg?raw=true)
 
 ---
 
